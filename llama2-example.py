@@ -13,7 +13,7 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.chains import ConversationalRetrievalChain
 
 # Replicate API token
-os.environ['REPLICATE_API_TOKEN'] = "r8_Gxi9637gkoUdLDipo9Jhp2TtucTe9UB0adBu4"
+os.environ['REPLICATE_API_TOKEN'] = "<YOUR REPLICATE API TOKEN HERE>"
 
 # Load and preprocess the PDF document
 loader = PyPDFLoader('./instructions.pdf')
@@ -33,7 +33,7 @@ local_opensearch = "http://localhost:9200"
 # URL to connect with OpenSearch running on AWS. To start OpenSearch,
 # run `terraform apply` in the current directory. Then, replace the
 # value below with the URL provided by the Terraform output.
-amazon_opensearch = "https://sxw0lcg95nou0840p9ce.us-east-1.aoss.amazonaws.com"
+amazon_opensearch = "<YOUR AMAZON OPENSEARCH SERVERLESS URL HERE>"
 credentials = boto3.Session().get_credentials()
 awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, 'us-east-1',
                    'aoss', session_token=credentials.token)
