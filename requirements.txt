@@ -1,0 +1,7 @@
+requests-aws4auth
+boto3
+replicate
+opensearch-py
+sentence_transformers
+pypdf
+langchain
